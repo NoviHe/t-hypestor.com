@@ -21,7 +21,7 @@
 							</a>
 						</div>
 					</div>
-				</div>	
+				</div>
 				<div class="no_print" style="padding:15px;">
 					<table id="tabel" class="table table-hover table-striped table-bordered" style="width:100%;">
 						<thead>
@@ -34,55 +34,55 @@
 								<th>Stok Produk</th>
 							</tr>
 						</thead>
-						<tbody>			
-						<?php
+						<tbody>
+							<?php
 							$no = 1;
-							$data = mysqli_query($koneksi,"select * from db_inventori");
-							while($d = mysqli_fetch_array($data)){
-						?>	
-						<tr>
-							<td class="no_print">
-								<a class="text-danger" href="" data-toggle="modal" data-target="#modals_hapus_inventori_<?php echo $d['id'];?>" data-backdrop="static" data-keyboard="false">
-									<i class="fa fa-trash"></i>
-								</a>
-							</td>
-							<td>
-								<?php echo $no++;?>
-							</td>
-							<td>
-								<a class="text-danger" href="" data-toggle="modal" data-target="#modals_edit_inventori_<?php echo $d['id'];?>" data-backdrop="static" data-keyboard="false" style="text-decoration:none; font-weight:500;">
-									<?php echo $d['id'];?>
-								</a>
-							</td>
-							<td>
-								<?php echo $d['produk'];?>
-							</td>
-							<td>
-								<?php echo date('d-m-Y', strtotime($d['tanggal']));?>
-								-
-								<?php echo date('H:i:s', strtotime($d['tanggal']));?>
-							</td>
-							<td>
-								<?php echo $d['stok'];?>
-							</td>
-						</tr>
-						<?php 
-						}
-						?>			
+							$data = mysqli_query($koneksi, "select * from db_inventori");
+							while ($d = mysqli_fetch_array($data)) {
+							?>
+								<tr>
+									<td class="no_print">
+										<a class="text-danger" href="" data-toggle="modal" data-target="#modals_hapus_inventori_<?php echo $d['id']; ?>" data-backdrop="static" data-keyboard="false">
+											<i class="fa fa-trash"></i>
+										</a>
+									</td>
+									<td>
+										<?php echo $no++; ?>
+									</td>
+									<td>
+										<a class="text-danger" href="" data-toggle="modal" data-target="#modals_edit_inventori_<?php echo $d['id']; ?>" data-backdrop="static" data-keyboard="false" style="text-decoration:none; font-weight:500;">
+											<?php echo $d['id']; ?>
+										</a>
+									</td>
+									<td>
+										<?php echo $d['produk']; ?>
+									</td>
+									<td>
+										<?php echo date('d-m-Y', strtotime($d['tanggal'])); ?>
+										-
+										<?php echo date('H:i:s', strtotime($d['tanggal'])); ?>
+									</td>
+									<td>
+										<?php echo $d['stok']; ?>
+									</td>
+								</tr>
+							<?php
+							}
+							?>
 						</tbody>
 						<tfoot>
-						<tr>
-							<th colspan="5" style="text-align:right; padding-right:10px;">Total Stok</th>
-							<th style="padding:0px 8px; margin:0px; text-align:center; padding-left:10px; text-transform:capitalize">
-								<?php 
-									echo number_format($jml_inventori,0,',','.');
-								?>
-							</th>
-						</tr>
+							<tr>
+								<th colspan="5" style="text-align:right; padding-right:10px;">Total Stok</th>
+								<th style="padding:0px 8px; margin:0px; text-align:center; padding-left:10px; text-transform:capitalize">
+									<?php
+									echo number_format($jml_inventori, 0, ',', '.');
+									?>
+								</th>
+							</tr>
 						</tfoot>
 					</table>
-				</div>	
-				
+				</div>
+
 				<!-- Print -->
 				<div class="print_table_inventori" style="padding:15px;">
 					<table id="tabel_inventori_print" class="table table-hover table-striped table-bordered" style="width:100%;">
@@ -95,48 +95,48 @@
 								<th>Stok Produk</th>
 							</tr>
 						</thead>
-						<tbody>			
-						<?php
+						<tbody>
+							<?php
 							$no = 1;
-							$data = mysqli_query($koneksi,"select * from db_inventori");
-							while($d = mysqli_fetch_array($data)){
-						?>	
-						<tr>
-							<td class="no_print">
-								<a class="text-danger" href="" data-toggle="modal" data-target="#modals_hapus_inventori_<?php echo $d['id'];?>" data-backdrop="static" data-keyboard="false">
-									<i class="fa fa-trash"></i>
-								</a>
-							</td>
-							<td>
-								<?php echo $no++;?>
-							</td>
-							<td>
-								<?php echo $d['id'];?>
-							</td>
-							<td>
-								<?php echo $d['produk'];?>
-							</td>
-							<td>
-								<?php echo $d['stok'];?>
-							</td>
-						</tr>
-						<?php 
-						}
-						?>			
+							$data = mysqli_query($koneksi, "select * from db_inventori");
+							while ($d = mysqli_fetch_array($data)) {
+							?>
+								<tr>
+									<td class="no_print">
+										<a class="text-danger" href="" data-toggle="modal" data-target="#modals_hapus_inventori_<?php echo $d['id']; ?>" data-backdrop="static" data-keyboard="false">
+											<i class="fa fa-trash"></i>
+										</a>
+									</td>
+									<td>
+										<?php echo $no++; ?>
+									</td>
+									<td>
+										<?php echo $d['id']; ?>
+									</td>
+									<td>
+										<?php echo $d['produk']; ?>
+									</td>
+									<td>
+										<?php echo $d['stok']; ?>
+									</td>
+								</tr>
+							<?php
+							}
+							?>
 						</tbody>
 						<tfoot>
-						<tr>
-							<th colspan="4" style="text-align:right; padding-right:10px;">Total Stok</th>
-							<th style="padding:0px 8px; margin:0px; text-align:center; padding-left:10px; text-transform:capitalize">
-								<?php 
-									echo number_format($jml_inventori,0,',','.');
-								?>
-							</th>
-						</tr>
+							<tr>
+								<th colspan="4" style="text-align:right; padding-right:10px;">Total Stok</th>
+								<th style="padding:0px 8px; margin:0px; text-align:center; padding-left:10px; text-transform:capitalize">
+									<?php
+									echo number_format($jml_inventori, 0, ',', '.');
+									?>
+								</th>
+							</tr>
 						</tfoot>
 					</table>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>
