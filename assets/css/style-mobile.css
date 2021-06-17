@@ -1,0 +1,204 @@
+/*--------------------------------------------------------------------------------------------------------------------------------------------------
+ * 2021 CSS Solusi Digital ID (solusidigitalid.com) 
+ *------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 1024px) {
+	body {
+		overflow-x:auto;
+	}
+	.mobile_hide {
+		display:none!important;
+	}
+	.container_table.mobile {
+		overflow-x:auto;
+	}
+	.dropdown-menu {
+		top: 38%!important;
+	}	
+	.dropdown-menu.notifikasi {
+		top: 43.3%!important;
+	}	
+	.dropdown-menu.grid {
+		top: 45.3%!important;
+	}
+	.app-header__logo .logo-src {
+		/*width:177px;*/
+		width:0px;
+	}
+	.logo-src img {
+		margin-left:-30px;
+		margin-top:-13px;
+		height:40px;
+	}
+	.logo-src.mgl_setting {
+		margin-left:30px;
+	}
+	.header-btn-lg {
+		display:block!important;
+	}
+	.inner-bar-right {
+		width:50px;
+	}
+	.table-container.desktop_overflow_none {
+		overflow: auto;
+	}
+	.dataTables_info {
+		margin-bottom:20px;
+	}	
+	div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+		padding-left: 50px;
+	}
+	.card-header {
+		padding: 1rem 1.5rem;
+	}
+	.dropdown-menu.monitoring_question {
+		top: 50%!important;
+	}
+	.form_data {
+		padding:30px;
+		padding-top:0px;
+	}
+	.rekomended_file {
+		margin:0px auto 10px auto;
+	}
+	.profile_foto img { 
+		margin:30px auto 0px auto!important;
+	}
+	.form_data {
+		margin:30px 0px 0px 0px;
+	}
+	.rekomended_file {
+		margin-top:-7px;
+		margin-bottom:30px;
+	}
+	.mobile_nopd {
+		padding:0px!important;
+	}
+	.media_library {
+		width:100%;
+		height:100px;
+	}
+	.bar_mobile_none {
+		width:50px!important;
+	}
+	.mgtblr_0 {
+		margin:0px 3px 10px 3px;
+	}
+	.extra_large_modals {
+		max-width:100%;
+		margin-top:35px;
+		margin-left:30px;
+		margin-right:30px;
+	}
+	.media_modals {
+		width:100%;
+		height:auto;
+		display:block;
+		margin:0px 0px;
+		padding:20px 0px;	
+		margin-bottom:30px;
+	}
+	.attachment-info span {
+		line-height:22px;
+		margin-top:3px;
+	}
+	.copy_data {
+		margin-bottom:50px;
+	}
+	.btn_clipboard {
+		margin-top:3px;
+	}
+	.attachment-info span>a {
+		bottom:10px;
+	}
+	.modals_hapus {
+		font-size:12px;
+	}
+	.form_input.color label{
+		margin-top:5px;
+	}
+	.form_input.color {
+		padding-top:15px;
+	}
+	.form_input input.color {
+		width:155px;
+		height:155px;
+	}
+	.form-check {
+		left:15px!important;
+		bottom:10px!important;
+	}
+	.widget-number.small_info span {
+		display:none;
+	}
+	.h3_detail_info {
+		text-align:left;
+		line-height:22px;
+		margin-bottom:10px;
+	}
+	.h4_detail_info {
+		width:100%;
+		text-align:left;
+	}
+	.border_left_tab,
+	.border_right_tab
+	{
+		border:none;
+	}
+	.nav-justified .nav-link .nav-text {
+		margin-bottom:20px!important;
+		border:1px solid #eee;
+		font-size:10px!important;
+		padding:15px;
+		height:60px;
+		width:100%;
+	}
+	.mobile_tabs_edit {
+		padding-left:15px;
+		padding-right:0px;
+	}
+	.form_grup_with_judul.double,
+	.form_grup_with_judul.double.f_right {
+		width:100%;
+		float:none;
+	}
+	.tiga_kolom_mobile {
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%;
+	}
+	.form_plus {
+		display:none;
+	}
+	.form_grup_with_judul .judul {
+		 padding: 11px 15px 9px 15px;
+	}
+	.card-header.card-header-tab .card-header-title {
+		display:block!important;
+		margin-top:-5.5px!important;
+		font-weight:500!important;
+		font-size: 12px!important;
+		text-align:left;
+		margin-left:-7px;
+	}
+	.tambah_media.tabel {
+		margin-top:-28px;
+		padding-top:2px;
+		padding-left:0px;
+	}
+	.notifikasi_sukses {
+		top: 14px;
+		right: 30px;
+	}
+	.footer_copyright span {
+		display:none;
+	}
+	.menu-page-card {
+		margin-left:0px!important;
+		margin-right:0px!important;
+	}
+	.menu-link {
+		width:100%!important;
+		display:block;
+		margin:0px 0px 15px 0px;
+		float:none!important;
+	}
+}
